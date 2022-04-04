@@ -17,10 +17,16 @@ function getWrapperStyle() {
     };
 }
 
+function getTitleStyle() {
+    return {
+        marginBottom: '12px'
+    };
+}
+
 function App() {
     return (
         <div style={getWrapperStyle()}>
-            <h4 id='title'>Profissionais de saúde</h4>
+            <h4 style={getTitleStyle()}>Profissionais de saúde</h4>
             <div style={{border: '1px solid #e6e6e6', borderRadius: '10px', margin: '10px' }}>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
                     <div className='doctor'>
